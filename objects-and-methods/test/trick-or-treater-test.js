@@ -11,8 +11,6 @@ describe('trick or treater', function() {
 
   context('candies', function() {
 
-
-    var trickOrTreater = new TrickOrTreater(new Costume("Stefon"));
     xit('has an empty bag', function() {
       var costume = new Costume("Scarecrow");
       var trickOrTreater = new TrickOrTreater(costume);
