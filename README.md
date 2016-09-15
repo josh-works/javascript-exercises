@@ -20,7 +20,7 @@ Each sub-directory has its own README with more info. You'll get the hang of it.
 These use the browser based testing framework Mocha, along with Chai assertions. You'll run the test to validate your answer to each exercise.
 
 ```
-$ open concept/exercise/test/test_file.html
+$ open concept/exercise/test/test-file.html
 ```
 
 e.g.
