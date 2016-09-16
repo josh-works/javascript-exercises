@@ -1,5 +1,0 @@
-vendor
-vendor/*
-.DS_Store
-*.un~
-node_modules

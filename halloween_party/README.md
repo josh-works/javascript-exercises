@@ -1,12 +1,17 @@
-# Objects and Methods
+# Halloween Pary
 
-Run a test file by calling opening it in your browser. From this folder:
+## Running Tests
+
+
+To run a single test file call this command:
 
 ```bash
 $ open test/bag-test.html
 ```
 
-All the tests can be run by opening `test.html` in your browser:
+^ This will open up the file in the browser ^
+
+To run all the tests:
 
 ```bash
 $ open test.html
