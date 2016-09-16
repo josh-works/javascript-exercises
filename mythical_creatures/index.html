@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Introduction to Unit Testing</title>
+  <link rel="stylesheet" media="all" href="/dependencies/mocha.css">
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="messages"></div>
+  <div id="fixtures"></div>
+
+  <script src="/dependencies/mocha.js"></script>
+  <script src="/dependencies/chai.js"></script>
+
+  <script>
+    mocha.setup('bdd');
+    window.assert = chai.assert;
+  </script>
+  <script src="lib/unicorn.js"></script>
+  <script src="lib/centaur.js"></script>
+  <script src="lib/vampire.js"></script>
+  <script src="lib/dragon.js"></script>
+  <script src="lib/hobbit.js"></script>
+  <script src="lib/pirate.js"></script>
+  <script src="lib/wizard.js"></script>
+  <script src="tests/centaur-test.js"></script>
+  <script src="tests/unicorn-test.js"></script>
+  <script src="tests/vampire-test.js"></script>
+  <script src="tests/dragon-test.js"></script>
+  <script src="tests/hobbit-test.js"></script>
+  <script src="tests/pirate-test.js"></script>
+  <script src="tests/wizard-test.js"></script>
+
+  <script>mocha.run();</script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script>
+</body>
+</html>
