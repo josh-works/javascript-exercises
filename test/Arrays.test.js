@@ -6,7 +6,6 @@ describe('Array methods', function() {
   it('test0', function() {
     this.skip();
     // In the line below, create a new empty array
-
     var empty = []
     assert.deepEqual([], empty);
   });
@@ -14,7 +13,6 @@ describe('Array methods', function() {
   it('test1', function() {
     this.skip();
     // In the line below, create and array with the numbers 1 - 5
-
     var oneThroughFive = [1, 2, 3, 4, 5]
     assert.deepEqual([1, 2, 3, 4, 5], oneThroughFive);
   });
@@ -24,7 +22,6 @@ describe('Array methods', function() {
     var nums = [1, 2, 3]
     // In the line below, call a method on the nums variable
     // defined above to access the second element
-
     var actual = nums[1]
     assert.deepEqual(2, actual);
   });
@@ -34,7 +31,6 @@ describe('Array methods', function() {
     var nums = [1,2,3]
     // In the line below, call a method on the nums variable
     // defined above to access the last element
-    
     var actual = nums[2]
     assert.deepEqual(3, actual);
   });
@@ -42,10 +38,8 @@ describe('Array methods', function() {
   it('test4', function() {
     this.skip();
     var nums = [1,2,3,4,5,6,7, "hi", "there"]
-  
     // In the line below, call a method on the nums variable
     // defined above to return the number of items in the array
-  
     var actual = nums.length
     assert.deepEqual(9, actual);
   });
@@ -56,7 +50,6 @@ describe('Array methods', function() {
     // In the line below, call a method on the nums variable
     // defined above to access the last element
     // but try to find another way than in test3
-
     var actual = nums[nums.length - 1]
     assert.deepEqual("there", actual);
   });
@@ -66,7 +59,6 @@ describe('Array methods', function() {
     hummus = ["tahini", "chickpeas", "lemons"]
     // Call a method on the hummus variable that will
     // tell us how many elements there are in the array
-
     var result = hummus.length
     assert.deepEqual(3, result);
   });
@@ -84,16 +76,17 @@ describe('Array methods', function() {
   });
   
   it('test8', function() {
+    this.skip();
     var world_cup = ["Germany", "Mexico", "Iceland", "Portugal"]
     // Call a method on the world_cup variable to remove and return
     // the last element of the array
-    
     last_element = world_cup.pop()
     assert.deepEqual("Portugal", last_element)
     assert.deepEqual(["Germany", "Mexico", "Iceland"], world_cup)
   })
   
   it('test9', function() {
+    this.skip();
     var karaoke = ["Shake it Off", "Dancing Queen", "Bohemian Rhapsody"]
     // Call a method on the karaoke variable to ask whether "Toxic"
     // is an element or not
@@ -122,15 +115,16 @@ describe('Array methods', function() {
   }) 
   
   it('test10', function() {
+    this.skip();
     var band = ["Guitar", "Drums", "Bass"]
     // Call a method on the band variable to add the element "Vocals"
     // to the beginning of the array
-    
     band.unshift("Vocals")
     assert.deepEqual(["Vocals", "Guitar", "Drums", "Bass"], band)
   })
   
   it('test11', function() {
+    this.skip();
     var garden = ["Tulips", "Tomatoes", "Basil", "Peppers"]
     // Call a method to remove and return the first element from the garden array
     var firstElement = garden.shift()
@@ -139,6 +133,7 @@ describe('Array methods', function() {
   })
   
   it('test12', function(){
+    this.skip();
     var teams = ["Rockies", "Avalanche", "Nuggets", "Broncos", "Rapids"]
     // Call a method on the teams variable to get the second, third, and fourth teams
     
@@ -151,6 +146,7 @@ describe('Array methods', function() {
   })
   
   it('test13', function(){
+    this.skip();
     var fourteeners = ["Pikes Peak", null, "Mount Elbert", null, "Mount Evans"]
     // Call a method on the fourteeners variable to remove the nils
     // and set a new variable equal to this cleaned-up array
@@ -161,25 +157,26 @@ describe('Array methods', function() {
   })
   
   it('test14', function() {
-    // this.skip();
+    this.skip();
       var pokemon = [["Squirtle", "Charmander", "Bulbasaur"], ["Pikachu"], "Staryu"]
     // Call a method on the pokemon variable to remove the nesting
       var pokemon = pokemon.concat.apply([], pokemon)
       assert.deepEqual(["Squirtle", "Charmander", "Bulbasaur", "Pikachu", "Staryu"], pokemon)
   })
   
+  // HERE BE 🐉 THE REST OF THESE TESTS ARE NOT DONE DO NOT TOUCH THEM
   it('test15', function() {
     this.skip();
-    //   var scores = [23, 56, 34, 29, 48]
-    //   // Call a method on the scores variables that will
-    //   // move the elements two spots to the left
-    //   var new_scores = scores
-    assert.deepEqual([34, 29, 48, 23, 56], new_scores)
+    var scores = [23, 56, 34, 29, 48]
+    // Call a method on the scores variables that will
+    // move the elements two spots to the left
+    var newScores = scores
+    assert.deepEqual([34, 29, 48, 23, 56], newScores)
     // 
     //   // Now call a method on the scores variables that will
     //   // move the elements one spot to the right
-    //   var new_scores = scores
-    assert.deepEqual([48, 23, 56, 34, 29], new_scores)
+    //   var newScores = scores
+    assert.deepEqual([48, 23, 56, 34, 29], newScores)
   })
   
     it('test16', function() {
