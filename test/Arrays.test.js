@@ -1,7 +1,8 @@
 var assert = require('assert');
 
 describe('Array methods', function() {
-  
+  // these tests based on Turing's `ruby-exercises`, specifically:
+  // data-types/collections/arrays.rb
   it('test0', function() {
     this.skip();
     // In the line below, create a new empty array
@@ -118,8 +119,46 @@ describe('Array methods', function() {
       }
     }
     assert.deepEqual(true, dancingQueenInArray)
-  }) // missing semicolon?
+  }) 
   
+  it('test10', function() {
+    var band = ["Guitar", "Drums", "Bass"]
+    // Call a method on the band variable to add the element "Vocals"
+    // to the beginning of the array
+    
+    band.unshift("Vocals")
+    assert.deepEqual(["Vocals", "Guitar", "Drums", "Bass"], band)
+  })
+  
+  it('test11', function() {
+    var garden = ["Tulips", "Tomatoes", "Basil", "Peppers"]
+    // Call a method to remove and return the first element from the garden array
+    var firstElement = garden.shift()
+    assert.deepEqual(["Tomatoes", "Basil", "Peppers"], garden)
+    assert.deepEqual("Tulips", firstElement)
+  })
+  
+  it('test12', function(){
+    var teams = ["Rockies", "Avalanche", "Nuggets", "Broncos", "Rapids"]
+    // Call a method on the teams variable to get the second, third, and fourth teams
+    
+    var someTeams = teams.slice(1, 4)
+    assert.deepEqual(["Avalanche", "Nuggets", "Broncos"], someTeams)
+    
+    // Now use a different method on the teams variable to get the first and second teams
+    var someTeams = teams.slice(0,2)
+    assert.deepEqual(["Rockies", "Avalanche"], someTeams)
+  })
+  
+  it('test13', function(){
+    var fourteeners = ["Pikes Peak", null, "Mount Elbert", null, "Mount Evans"]
+    // Call a method on the fourteeners variable to remove the nils
+    // and set a new variable equal to this cleaned-up array
+
+    var cleanedUpFourteeners = fourteeners.filter(function(n){return n;})
+    
+    assert.deepEqual(["Pikes Peak", "Mount Elbert", "Mount Evans"], cleanedUpFourteeners)
+})
   
 });
 
