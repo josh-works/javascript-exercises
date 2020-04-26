@@ -33,3 +33,10 @@ $ open objects-and-methods/exercise1/test/index.html
 
 * mythical-creatures
 * objects-and-methods
+
+
+## Getting Started
+
+```
+npm install --global mocha
+```
