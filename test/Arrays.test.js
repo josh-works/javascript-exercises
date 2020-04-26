@@ -82,7 +82,43 @@ describe('Array methods', function() {
     assert.deepEqual("Japan", world_cup.slice(-1)[0])
   });
   
+  it('test8', function() {
+    var world_cup = ["Germany", "Mexico", "Iceland", "Portugal"]
+    // Call a method on the world_cup variable to remove and return
+    // the last element of the array
+    
+    last_element = world_cup.pop()
+    assert.deepEqual("Portugal", last_element)
+    assert.deepEqual(["Germany", "Mexico", "Iceland"], world_cup)
+  })
   
+  it('test9', function() {
+    var karaoke = ["Shake it Off", "Dancing Queen", "Bohemian Rhapsody"]
+    // Call a method on the karaoke variable to ask whether "Toxic"
+    // is an element or not
+    var toxicInArray = null
+    for (var i = 0; i < karaoke.length; i++) {
+      if (karaoke[i] == "Toxic") {
+        toxicInArray = true
+      } else {
+        toxicInArray = false
+      }
+    }
+    assert.deepEqual(false, toxicInArray)
+    
+    // Now call a method on the karaoke variable to ask whether "Dancing Queen"
+    // is an element or not
+    
+    var dancingQueenInArray = null
+    for (var i = 0; i < karaoke.length; i++) {
+      if (karaoke[i] == "Dancing Queen") {
+        return dancingQueenInArray = true
+      } else {
+        dancingQueenInArray = false
+      }
+    }
+    assert.deepEqual(true, dancingQueenInArray)
+  }) // missing semicolon?
   
   
 });

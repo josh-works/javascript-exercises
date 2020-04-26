@@ -52,3 +52,5 @@ Start with `Arrays.test.js`. Pass this file path to the `mocha` command-line too
 Should see something like this:
 
 ![array tests](/images/arrays_example.jpg)
+
+Open up that file, start removing skips, and make the tests pass!
