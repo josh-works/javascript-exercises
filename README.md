@@ -34,6 +34,21 @@ $ mocha
 
 Open this all up in your editor, head over to `test/Arrays.test.js`, and work on making the tests pass!
 
+Run one file at a time, with:
+
+```
+mocha path/to/file.test.js
+```
 
 
+# Recommended order
 
+Start with `Arrays.test.js`. Pass this file path to the `mocha` command-line tool with:
+
+```
+ mocha test/Arrays.test.js
+```
+
+Should see something like this:
+
+![array tests](/images/arrays_example.jpg)

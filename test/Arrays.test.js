@@ -3,7 +3,7 @@ var assert = require('assert');
 describe('Array methods', function() {
   
   it('test0', function() {
-    // this.skip();
+    this.skip();
     // In the line below, create a new empty array
 
     var empty = []
@@ -11,7 +11,7 @@ describe('Array methods', function() {
   });
   
   it('test1', function() {
-    // this.skip();
+    this.skip();
     // In the line below, create and array with the numbers 1 - 5
 
     var oneThroughFive = [1, 2, 3, 4, 5]
@@ -19,7 +19,7 @@ describe('Array methods', function() {
   });
   
   it('test2', function() {
-    // this.skip();
+    this.skip();
     var nums = [1, 2, 3]
     // In the line below, call a method on the nums variable
     // defined above to access the second element
@@ -29,7 +29,7 @@ describe('Array methods', function() {
   });
   
   it('test3', function() {
-    // this.skip();
+    this.skip();
     var nums = [1,2,3]
     // In the line below, call a method on the nums variable
     // defined above to access the last element
@@ -39,7 +39,7 @@ describe('Array methods', function() {
   });
   
   it('test4', function() {
-    // this.skip();
+    this.skip();
     var nums = [1,2,3,4,5,6,7, "hi", "there"]
   
     // In the line below, call a method on the nums variable
@@ -50,7 +50,7 @@ describe('Array methods', function() {
   });
   
   it('test5', function() {
-    // this.skip();
+    this.skip();
     var nums = [1,2,3,4,5,6,7, "hi", "there"]
     // In the line below, call a method on the nums variable
     // defined above to access the last element
@@ -61,7 +61,7 @@ describe('Array methods', function() {
   });
   
   it('test6', function() {
-    // this.skip();
+    this.skip();
     hummus = ["tahini", "chickpeas", "lemons"]
     // Call a method on the hummus variable that will
     // tell us how many elements there are in the array
@@ -69,4 +69,41 @@ describe('Array methods', function() {
     var result = hummus.length
     assert.deepEqual(3, result);
   });
+  
+  it('test7', function(){
+    this.skip();
+    var world_cup = ["Germany", "Mexico", "Iceland", "Portugal"]
+    // In the line below, add the element "Brazil" to the end of the world_cup array
+    world_cup.push("Brazil")
+    assert.deepEqual("Brazil", world_cup.slice(-1)[0])
+
+    // Use a different method to add the element "Japan" to the end of the array
+    world_cup[world_cup.length] = "Japan"
+    assert.deepEqual("Japan", world_cup.slice(-1)[0])
+  });
+  
+  
+  
+  
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
