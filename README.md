@@ -40,3 +40,23 @@ $ open objects-and-methods/exercise1/test/index.html
 ```
 npm install --global mocha
 ```
+
+in your command line, run `mocha`, and you should see something like this:
+
+```
+$ mocha
+  Array methods
+    1) should remove duplicates from the array
+
+
+  0 passing (6ms)
+  1 failing
+
+  1) Array methods should remove duplicates from the array:
+     ReferenceError: getUniqueNumbers is not defined
+      at Context.<anonymous> (test/Arrays.test.js:15:20)
+
+```
+
+Open this all up in your editor, head over to `test/Arrays.test.js`, and work on making the tests pass!
+
