@@ -161,11 +161,11 @@ describe('Array methods', function() {
   })
   
   it('test14', function() {
-    this.skip();
-    //   pokemon = [["Squirtle", "Charmander", "Bulbasaur"], ["Pikachu"], "Staryu"]
+    // this.skip();
+      var pokemon = [["Squirtle", "Charmander", "Bulbasaur"], ["Pikachu"], "Staryu"]
     // Call a method on the pokemon variable to remove the nesting
-    //   pokemon = pokemon
-    //   assert_equal ["Squirtle", "Charmander", "Bulbasaur", "Pikachu", "Staryu"], pokemon
+      var pokemon = pokemon.concat.apply([], pokemon)
+      assert.deepEqual(["Squirtle", "Charmander", "Bulbasaur", "Pikachu", "Staryu"], pokemon)
   })
   
   it('test15', function() {
@@ -174,12 +174,12 @@ describe('Array methods', function() {
     //   // Call a method on the scores variables that will
     //   // move the elements two spots to the left
     //   var new_scores = scores
-    //   assert_equal [34, 29, 48, 23, 56], new_scores
+    assert.deepEqual([34, 29, 48, 23, 56], new_scores)
     // 
     //   // Now call a method on the scores variables that will
     //   // move the elements one spot to the right
     //   var new_scores = scores
-    //   assert_equal [48, 23, 56, 34, 29], new_scores
+    assert.deepEqual([48, 23, 56, 34, 29], new_scores)
   })
   
     it('test16', function() {
@@ -187,7 +187,7 @@ describe('Array methods', function() {
       //   var vowels = ["a", "e", "y", "i", "o", "u", "y"]
       //   // Call a method on the vowels variable to remove "y"
       // 
-      //   assert_equal ["a", "e", "i", "o", "u"], vowels
+      assert.deepEqual(["a", "e", "i", "o", "u"], vowels)
     })
     
     it('test17', function() {
@@ -196,7 +196,7 @@ describe('Array methods', function() {
       //   // Call a method on the furniture variable to add the element
       //   // "dresser" in between the elements "couch" and "bed"
       //   var new_furniture = furniture
-      //   assert_equal ["couch", "dresser", "bed", "table"], new_furniture
+      assert.deepEqual(["couch", "dresser", "bed", "table"], new_furniture)
     })
     
     it('test18', function() {
@@ -205,7 +205,7 @@ describe('Array methods', function() {
       //   // Call a method on the children variable to combine them into
       //   // one string like this: "Sarah, Owen, Peter"
       //   var one_string = children
-      //   assert_equal "Sarah, Owen, Peter", one_string
+      assert.deepEqual("Sarah, Owen, Peter", one_string)
     })
     
     it('test19', function() {
@@ -214,7 +214,7 @@ describe('Array methods', function() {
       //   // Call a method on the ascending variable to create an array
       //   // with the elements in the opposite order
       //   var descending = ascending
-      //   assert_equal [5,4,3,2,1], descending
+      assert.deepEqual([5,4,3,2,1], descending)
     })
     
     it('test20', function() {
