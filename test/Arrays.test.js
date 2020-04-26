@@ -158,7 +158,80 @@ describe('Array methods', function() {
     var cleanedUpFourteeners = fourteeners.filter(function(n){return n;})
     
     assert.deepEqual(["Pikes Peak", "Mount Elbert", "Mount Evans"], cleanedUpFourteeners)
-})
+  })
+  
+  it('test14', function() {
+    this.skip();
+    //   pokemon = [["Squirtle", "Charmander", "Bulbasaur"], ["Pikachu"], "Staryu"]
+    // Call a method on the pokemon variable to remove the nesting
+    //   pokemon = pokemon
+    //   assert_equal ["Squirtle", "Charmander", "Bulbasaur", "Pikachu", "Staryu"], pokemon
+  })
+  
+  it('test15', function() {
+    this.skip();
+    //   var scores = [23, 56, 34, 29, 48]
+    //   // Call a method on the scores variables that will
+    //   // move the elements two spots to the left
+    //   var new_scores = scores
+    //   assert_equal [34, 29, 48, 23, 56], new_scores
+    // 
+    //   // Now call a method on the scores variables that will
+    //   // move the elements one spot to the right
+    //   var new_scores = scores
+    //   assert_equal [48, 23, 56, 34, 29], new_scores
+  })
+  
+    it('test16', function() {
+      this.skip();
+      //   var vowels = ["a", "e", "y", "i", "o", "u", "y"]
+      //   // Call a method on the vowels variable to remove "y"
+      // 
+      //   assert_equal ["a", "e", "i", "o", "u"], vowels
+    })
+    
+    it('test17', function() {
+      this.skip();
+      //   var furniture = ["couch", "bed", "table"]
+      //   // Call a method on the furniture variable to add the element
+      //   // "dresser" in between the elements "couch" and "bed"
+      //   var new_furniture = furniture
+      //   assert_equal ["couch", "dresser", "bed", "table"], new_furniture
+    })
+    
+    it('test18', function() {
+      this.skip();
+      //   var children = ["Sarah", "Owen", "Peter"]
+      //   // Call a method on the children variable to combine them into
+      //   // one string like this: "Sarah, Owen, Peter"
+      //   var one_string = children
+      //   assert_equal "Sarah, Owen, Peter", one_string
+    })
+    
+    it('test19', function() {
+      this.skip();
+      //   var ascending = [1,2,3,4,5]
+      //   // Call a method on the ascending variable to create an array
+      //   // with the elements in the opposite order
+      //   var descending = ascending
+      //   assert_equal [5,4,3,2,1], descending
+    })
+    
+    it('test20', function() {
+      this.skip();
+      //   var dice = [1,2,3,4,5,6]
+      //   // Call a method on the dice variable to get a random element out
+      //   // of the array
+      //   var roll = dice
+      //   assert roll <= 6
+      //   assert roll >= 1
+      //   // Note, this assertion assumes the Ruby Version is 2.4 or higher.
+      //   // This test will fail with expecting roll to be a FixNum if the
+      //   // Ruby version is 2.3 or earlier
+      //   assert_instance_of Integer, roll
+      
+    })
+
   
 });
 
